@@ -1,0 +1,36 @@
+{
+    "name": "uzbek/urlex",
+    "description": "Generates a Blade directive exporting all of your named Laravel routes.",
+    "require": {
+        "laravel/framework": "~5.4",
+        "ext-json": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Inoyatullokhon",
+            "email": "mronx@ya.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Uzbek\\Urlex\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Uzbek\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.6",
+        "mikey179/vfsStream": "^1.6"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Uzbek\\Urlex\\UrlexServiceProvider"
+            ]
+        }
+    }
+}
